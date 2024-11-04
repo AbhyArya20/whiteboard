@@ -15,4 +15,4 @@ jobs:
 
       - name: Launch Docker Compose Services
         run: |
-          docker-compose up -d
+          docker compose up -d
