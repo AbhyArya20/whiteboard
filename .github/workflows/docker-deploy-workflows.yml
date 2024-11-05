@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   build:
@@ -16,4 +15,4 @@ jobs:
 
       - name: Launch Docker Compose Services
         run: |
-          docker compose up -d
+          sudo docker compose up -d
