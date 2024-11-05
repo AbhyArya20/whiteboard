@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState, ChangeEvent, FormEvent } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+
 import { Button } from "@repo/ui/button";
 
 const API_HOST = process.env.NEXT_PUBLIC_API_HOST || "http://localhost:3001";
@@ -37,7 +38,7 @@ export default function Web() {
 
   return (
     <div>
-      <h1>whiteboard</h1>
+      <h1>whiteboard For everyone</h1>
       <form onSubmit={onSubmit}>
         <label htmlFor="name">Name </label>
         <input
